@@ -20,12 +20,13 @@ description: >-                        # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'protocol://domain'
 
-author: your_full_name                  # change to your full name
+author: Chintsai Hwo                  # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg   # support internet resources
+# avatar: /assets/img/sample/avatar.jpg   # support internet resources
+avatar: https://pic2.zhimg.com/v2-0e1329aaef1c41746af29f015f963f4f_xll.jpg
 
 github:
-  username: github_username             # change to your github username
+  username: jcglqmoyx             # change to your github username
 
 twitter:
   username: twitter_username            # change to your twitter username
