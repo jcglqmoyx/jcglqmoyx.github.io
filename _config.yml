@@ -18,7 +18,7 @@ description: >-                        # used by seo meta and the atom feed
   and focuses on text presentation.
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: 'protocol://domain'
+url: 'https://www.instagram.com/chintsaihwo/'
 
 author: Chintsai Hwo                  # change to your full name
 
@@ -39,8 +39,9 @@ social:
     - https://twitter.com/chintsaihwo      # change to your twitter homepage
     - https://github.com/jcglqmoyx       # change to your github homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/ChintsaiHwo
+    # - https://www.facebook.com/chintsaihwo
     - https://www.linkedin.com/in/chintsai-hwo-548631190/
+    - https://www.youtube.com/channel/UCMt0affgpxiqz18fEekiDgQ?view_as=subscriber
 
 google_site_verification: google_meta_tag_verification # change to your verification string
 
