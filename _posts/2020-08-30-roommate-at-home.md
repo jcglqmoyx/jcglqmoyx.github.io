@@ -78,5 +78,5 @@ This is how you power your diode using raspberry pi's GPIO pins.
 
 You then launch a terminal in the raspberry pi, enter the directory where your Python script(I named it roommate_at_home.py) is and type command `python roommate_at_home.py`. If your roommate is at home(actually you are checking whether his phone is connected to your apartment's Wi-Fi), the diode should begin to blink. Don't close the terminal and then use a wireless keyboard to connect to your raspberry pi. Press the up arrow key and the `Enter` key each time you want to run the program.
 
-<a href='https://video.zhihu.com/video/1283537449365147648?'>Click here to see the demo video</a>
+<a href='https://video.zhihu.com/video/1283537449365147648?'>Click here to see the demo video if it's not available</a>
 <video src="https://video.zhihu.com/video/1283537449365147648?" width="800px" height="600px" controls="controls"></video>
