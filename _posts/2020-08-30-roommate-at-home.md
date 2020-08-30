@@ -7,15 +7,17 @@ After you log in to the admin site of the Wi-Fi, you will see what your roommate
 >ping 192.168.1.2
 
 And the response was like this:
->PING 192.168.1.2 (192.168.1.2) 56(84) bytes of data.
- 64 bytes from 192.168.1.2: icmp_seq=1 ttl=64 time=120 ms
- 64 bytes from 192.168.1.2: icmp_seq=2 ttl=64 time=41.0 ms
- 64 bytes from 192.168.1.2: icmp_seq=3 ttl=64 time=63.4 ms
- 64 bytes from 192.168.1.2: icmp_seq=4 ttl=64 time=6.66 ms
- ^C
- --- 192.168.1.2 ping statistics ---
- 4 packets transmitted, 4 received, 0% packet loss, time 3003ms
- rtt min/avg/max/mdev = 6.661/57.823/120.135/41.270 ms
+
+    PING 192.168.1.2 (192.168.1.2) 56(84) bytes of data.
+    64 bytes from 192.168.1.2: icmp_seq=1 ttl=64 time=51.4 ms
+    64 bytes from 192.168.1.2: icmp_seq=2 ttl=64 time=58.3 ms
+    64 bytes from 192.168.1.2: icmp_seq=3 ttl=64 time=84.10 ms
+    64 bytes from 192.168.1.2: icmp_seq=4 ttl=64 time=105 ms
+    64 bytes from 192.168.1.2: icmp_seq=5 ttl=64 time=25.0 ms
+    ^C
+    --- 192.168.1.2 ping statistics ---
+    5 packets transmitted, 5 received, 0% packet loss, time 9ms
+    rtt min/avg/max/mdev = 25.019/64.856/104.647/27.567 ms
 
 , which meant that his phone was online. So it was very likely that he was at home(and he was)!
 
