@@ -35,6 +35,7 @@ First, we write a Python script like this:
         print('At home')
 
 We then use the responding message of the `ping` command to control the on-off of a diode, which indicates whether your roommate' phone is online or not.
+    
     import datetime
     import os
     import time
