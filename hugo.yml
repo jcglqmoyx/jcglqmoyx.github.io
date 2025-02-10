@@ -11,7 +11,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-#mainsections: ["posts", "papermod"]
+mainsections: ["posts"]
 
 minify:
   disableXML: true
@@ -112,7 +112,7 @@ params:
 
   defaultTheme: auto
   # disableThemeToggle: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowReadingTime: false
   # disableSpecial1stPost: true
   displayFullLangName: true
