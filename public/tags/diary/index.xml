@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>SCIENCE | ART</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on SCIENCE | ART</description>
+    <title>Diary on SCIENCE | ART</title>
+    <link>http://localhost:1313/tags/diary/</link>
+    <description>Recent content in Diary on SCIENCE | ART</description>
     <image>
       <title>SCIENCE | ART</title>
       <url>http://localhost:1313/images/papermod-cover.png</url>
@@ -12,12 +12,12 @@
     <generator>Hugo -- 0.143.1</generator>
     <language>en</language>
     <lastBuildDate>Mon, 10 Feb 2025 12:06:40 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/diary/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Unjuanable..</title>
-      <link>http://localhost:1313/posts/unjuanable/</link>
+      <title>The Intense Competition in Competitive Programming</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Mon, 10 Feb 2025 12:06:40 +0800</pubDate>
-      <guid>http://localhost:1313/posts/unjuanable/</guid>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
       <description>&lt;p&gt;In the &lt;a href=&#34;https://leetcode.com/contest/weekly-contest-436/ranking/&#34;&gt;436th LeetCode Weekly Contest&lt;/a&gt;, nine out of the top ten participants are from China, with only one participant (9th place, uwi, from Japan) from another country. I can only imagine how desperate foreign coders must feel, lol. Now I understand why so many brilliant scientists and engineers are leaving this country—it’s simply too competitive. Only the smartest and most energetic individuals survive.&lt;/p&gt;</description>
     </item>
   </channel>
