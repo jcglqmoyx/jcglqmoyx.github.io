@@ -9,16 +9,16 @@
       <url>https://jcglqmoyx.github.io/images/papermod-cover.png</url>
       <link>https://jcglqmoyx.github.io/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.143.1</generator>
+    <generator>Hugo -- 0.144.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Feb 2025 12:06:40 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Feb 2025 23:00:40 +0800</lastBuildDate>
     <atom:link href="https://jcglqmoyx.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Unjuanable..</title>
-      <link>https://jcglqmoyx.github.io/posts/unjuanable/</link>
-      <pubDate>Mon, 10 Feb 2025 12:06:40 +0800</pubDate>
-      <guid>https://jcglqmoyx.github.io/posts/unjuanable/</guid>
-      <description>&lt;p&gt;In the &lt;a href=&#34;https://leetcode.com/contest/weekly-contest-436/ranking/&#34;&gt;436th LeetCode Weekly Contest&lt;/a&gt;, nine out of the top ten participants are from China, with only one participant (9th place, uwi, from Japan) from another country. I can only imagine how desperate foreign coders must feel, lol. Now I understand why so many brilliant scientists and engineers are leaving this country—it’s simply too competitive. Only the smartest and most energetic individuals survive.🤣&lt;/p&gt;</description>
+      <title>Exploring Rust Edition 2024 and High-Performance Development</title>
+      <link>https://jcglqmoyx.github.io/posts/exploring-rust-edition-2024-and-high-performance-development/</link>
+      <pubDate>Thu, 20 Feb 2025 23:00:40 +0800</pubDate>
+      <guid>https://jcglqmoyx.github.io/posts/exploring-rust-edition-2024-and-high-performance-development/</guid>
+      <description>&lt;p&gt;The new major release of Rust, Rust Edition 2024, finally came out today, and I’ve been eagerly waiting for this. Although I’m not yet very experienced with all the new features of the language, I’ve been following its development and the growing community for quite some time. I’m obsessed with Rust’s high performance and memory safety. Over the past one or two years, I’ve written several projects in Rust, and I’ve always been impressed with how fast and stable the runtime is, along with its efficient use of memory. I’ve also tried solving LeetCode problems with Rust, but I eventually gave up because the language’s strict syntax rules made it difficult to solve competitive programming problems. Although I don’t currently need the new features introduced in Edition 2024, I still hope to use this as an opportunity to dive deeper into Rust and the field of high-performance development. 💪&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
