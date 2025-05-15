@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Diary on SCIENCE | ART</title>
-    <link>https://jcglqmoyx.github.io/tags/diary/</link>
+    <link>http://localhost:1313/tags/diary/</link>
     <description>Recent content in Diary on SCIENCE | ART</description>
     <image>
       <title>SCIENCE | ART</title>
-      <url>https://jcglqmoyx.github.io/images/papermod-cover.png</url>
-      <link>https://jcglqmoyx.github.io/images/papermod-cover.png</link>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.144.2</generator>
+    <generator>Hugo -- 0.147.3</generator>
     <language>en</language>
     <lastBuildDate>Thu, 20 Feb 2025 23:00:40 +0800</lastBuildDate>
-    <atom:link href="https://jcglqmoyx.github.io/tags/diary/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/diary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Exploring Rust Edition 2024 and High-Performance Development</title>
-      <link>https://jcglqmoyx.github.io/posts/exploring-rust-edition-2024-and-high-performance-development/</link>
+      <link>http://localhost:1313/posts/exploring-rust-edition-2024-and-high-performance-development/</link>
       <pubDate>Thu, 20 Feb 2025 23:00:40 +0800</pubDate>
-      <guid>https://jcglqmoyx.github.io/posts/exploring-rust-edition-2024-and-high-performance-development/</guid>
+      <guid>http://localhost:1313/posts/exploring-rust-edition-2024-and-high-performance-development/</guid>
       <description>&lt;p&gt;The new major release of Rust, Rust Edition 2024, finally came out today, and I’ve been eagerly waiting for this. Although I’m not yet very experienced with all the new features of the language, I’ve been following its development and the growing community for quite some time. I’m obsessed with Rust’s high performance and memory safety. Over the past one or two years, I’ve written several projects in Rust, and I’ve always been impressed with how fast and stable the runtime is, along with its efficient use of memory. I’ve also tried solving LeetCode problems with Rust, but I eventually gave up because the language’s strict syntax rules made it difficult to solve competitive programming problems. Although I don’t currently need the new features introduced in Edition 2024, I still hope to use this as an opportunity to dive deeper into Rust and the field of high-performance development. 💪&lt;/p&gt;</description>
     </item>
   </channel>

@@ -149,15 +149,9 @@ params:
     - name: github
       title: View Source on Github
       url: "https://github.com/jcglqmoyx"
-    - name: X
-      title: Share on X/Twitter
-      url: "https://x.com/ChintsaiHwo"
     - name: telegram
       title: Contact me on Telegram
       url: "https://t.me/jcglqmoyx/"
-    - name: instagram
-      title: Contact me on Instagram
-      url: "https://instagram.com/chintsaihwo"
 
   editPost:
     URL: "https://github.com/jcglqmoyx/jcglqmoyx.github.io"
