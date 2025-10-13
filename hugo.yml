@@ -105,7 +105,7 @@ outputs:
     - JSON
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production # to enable google analytics, opengraph, x-cards and schema.
   description: "It's never too old to learn."
   author: Chintsai Hwo
   # author: ["Me", "You"] # multiple authors
@@ -207,7 +207,7 @@ markup:
 #     disabled: false
 #     simple: true
 
-#   twitter:
+#   x:
 #     disabled: false
 #     enableDNT: true
 #     simple: true
@@ -223,5 +223,5 @@ markup:
 services:
   instagram:
     disableInlineCSS: true
-  twitter:
+  x:
     disableInlineCSS: true
