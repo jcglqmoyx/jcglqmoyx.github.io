@@ -1,0 +1,3 @@
+# This file tells GitHub Pages not to process the site with Jekyll
+# Jekyll will ignore directories that start with an underscore, which can break Hugo sites
+# Hugo already generates a proper static site, so we don't need Jekyll processing
