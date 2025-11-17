@@ -79,24 +79,24 @@ languages:
     #      - name: Profile Mode
     #        url: https://github.com/jcglqmoyx
 
-          #fa:
-          #  languagedirection: rtl
-          #  weight: 3
-          #  title: Chintsai Hwo
-          #  taxonomies:
-          #    category: FAcategories
-          #    tag: FAtags
-          #    series: FAseries
-          #  menu:
-          #    main:
-          #      - name: FATags
-          #        url: fatags
-          #        weight: 10
-          #  # custom params for each language should be under [langcode].parms - hugo v0.120.0
-          #  params:
-          #    homeInfoParams:
-          #      Title: "Hi there \U0001F44B"
-          #      Content: Welcome to RTL layout
+    #fa:
+    #  languagedirection: rtl
+    #  weight: 3
+    #  title: Chintsai Hwo
+    #  taxonomies:
+    #    category: FAcategories
+    #    tag: FAtags
+    #    series: FAseries
+    #  menu:
+    #    main:
+    #      - name: FATags
+    #        url: fatags
+    #        weight: 10
+    #  # custom params for each language should be under [langcode].parms - hugo v0.120.0
+    #  params:
+    #    homeInfoParams:
+    #      Title: "Hi there \U0001F44B"
+    #      Content: Welcome to RTL layout
 
 outputs:
   home:
@@ -144,7 +144,6 @@ params:
     Content: >
       It's never too old to learn.
 
-
   socialIcons:
     - name: github
       title: View Source on Github
@@ -181,14 +180,14 @@ params:
   #     hiddenInList: true # hide on list pages and home
   #     hiddenInSingle: true # hide on single page
 
-  # fuseOpts:
-  #     isCaseSensitive: false
-  #     shouldSort: true
-  #     location: 0
-  #     distance: 1000
-  #     threshold: 0.4
-  #     minMatchCharLength: 0
-  #     keys: ["title", "permalink", "summary", "content"]
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
 
 markup:
   goldmark:

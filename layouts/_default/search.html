@@ -1,0 +1,150 @@
+{{- define "main" }}
+
+<header class="page-header">
+    <h1>{{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+        {{- partial "translation_list.html" . -}}
+    </div>
+    {{- end }}
+</header>
+
+<div id="searchbox">
+    <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}"
+        aria-label="search" type="search" autocomplete="off" maxlength="64">
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let fuse;
+    let resList = document.getElementById('searchResults');
+    let sInput = document.getElementById('searchInput');
+    let first, last, current_elem = null;
+    let resultsAvailable = false;
+
+    // Load search index
+    fetch('/index.json')
+        .then(response => response.json())
+        .then(data => {
+            if (data) {
+                const options = {
+                    isCaseSensitive: false,
+                    includeScore: false,
+                    includeMatches: false,
+                    minMatchCharLength: 1,
+                    shouldSort: true,
+                    findAllMatches: false,
+                    keys: ['title', 'permalink', 'summary', 'content'],
+                    location: 0,
+                    threshold: 0.4,
+                    distance: 100,
+                    ignoreLocation: true
+                };
+
+                // Load Fuse.js from CDN
+                if (typeof Fuse === 'undefined') {
+                    const script = document.createElement('script');
+                    script.src = 'https://cdn.jsdelivr.net/npm/fuse.js@7.0.0';
+                    script.onload = () => {
+                        fuse = new Fuse(data, options);
+                    };
+                    document.head.appendChild(script);
+                } else {
+                    fuse = new Fuse(data, options);
+                }
+            }
+        })
+        .catch(error => console.error('Error loading search index:', error));
+
+    function activeToggle(ae) {
+        document.querySelectorAll('.focus').forEach(function(element) {
+            element.classList.remove('focus');
+        });
+        if (ae) {
+            ae.focus();
+            document.activeElement = current_elem = ae;
+            ae.parentElement.classList.add('focus');
+        } else {
+            document.activeElement.parentElement.classList.add('focus');
+        }
+    }
+
+    function reset() {
+        resultsAvailable = false;
+        resList.innerHTML = sInput.value = '';
+        sInput.focus();
+    }
+
+    sInput.onkeyup = function(e) {
+        if (fuse) {
+            let results = fuse.search(this.value.trim());
+            if (results.length !== 0) {
+                let resultSet = '';
+                for (let item in results) {
+                    resultSet += `<li class="post-entry"><header class="entry-header">${results[item].item.title}&nbsp;»</header>` +
+                        `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`;
+                }
+                resList.innerHTML = resultSet;
+                resultsAvailable = true;
+                first = resList.firstChild;
+                last = resList.lastChild;
+            } else {
+                resultsAvailable = false;
+                resList.innerHTML = '';
+            }
+        }
+    };
+
+    sInput.addEventListener('search', function(e) {
+        if (!this.value) reset();
+    });
+
+    document.onkeydown = function(e) {
+        let key = e.key;
+        let ae = document.activeElement;
+        let inbox = document.getElementById('searchbox').contains(ae);
+
+        if (ae === sInput) {
+            document.querySelectorAll('.focus').forEach(function(element) {
+                element.classList.remove('focus');
+            });
+        } else if (current_elem) ae = current_elem;
+
+        if (key === 'Escape') {
+            reset();
+        } else if (!resultsAvailable || !inbox) {
+            return;
+        } else if (key === 'ArrowDown') {
+            e.preventDefault();
+            if (ae == sInput) {
+                activeToggle(resList.firstChild.lastChild);
+            } else if (ae.parentElement != last) {
+                activeToggle(ae.parentElement.nextSibling.lastChild);
+            }
+        } else if (key === 'ArrowUp') {
+            e.preventDefault();
+            if (ae.parentElement == first) {
+                activeToggle(sInput);
+            } else if (ae != sInput) {
+                activeToggle(ae.parentElement.previousSibling.lastChild);
+            }
+        } else if (key === 'ArrowRight') {
+            ae.click();
+        }
+    };
+});
+</script>
+
+{{- end }}{{/* end main */}}
